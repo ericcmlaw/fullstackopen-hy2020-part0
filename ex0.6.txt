@@ -1,0 +1,7 @@
+note over browser:
+grabs notes and stores to js object
+end note
+browser->browser: add notes to list (client-side)
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa \n {"content":"text","date":"2020-03-24T10:11:43.079Z"}
+server-->browser:{"message":"note created"}
+
